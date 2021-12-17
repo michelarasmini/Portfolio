@@ -1,0 +1,361 @@
+/*imported fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Yeseva+One&display=swap');
+
+/*general settings*/
+*{
+	margin: 0px;
+	padding: 0px;
+    font-family: Montserrat;
+    color: #806C62;
+}
+body{
+    background-color: #FAF6F0;
+}
+p{
+    font-size: 1.8rem;
+}
+
+/*navigation*/
+
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7% 4% 8%;
+}
+ul{
+    list-style-type: none;
+    font-size: 2.7rem;
+    padding: 0% 3%;
+}
+a{
+    text-decoration: none;
+}
+.worklink{
+    text-decoration: underline;
+}
+
+/*main*/
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+/*roommateHUB*/
+.roommateapp{
+    grid-column: 1/2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.button{
+    border: none;
+    border-radius: 45px;
+    font-size: 2rem;
+    background-color: #E5D3E8;
+    padding: 2.5rem;
+}
+.app{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 14%;
+}
+.buttontext{
+    font-size: 2.3rem;
+}
+.titleright{
+    font-size: 1.9rem;
+    text-align: right;
+}
+.titleapp{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin: 23% 25% 1% 25%;
+}
+
+/*roommateHUB content*/
+.borderbox{
+    grid-column: 1/4;
+    grid-row: 1/5;
+    border: 0.9px solid #806C62;
+    border-radius: 4rem;
+    z-index: -1;
+    margin: 10% 10% 5% 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img{
+   max-width: 25rem;
+}
+.firstimg{
+    margin: 29% 0% 10% 0%;
+}
+.thirdimg{
+    margin: 10% 0% 10% 0%;
+}
+.logoposition{
+    max-width: 27rem;
+    margin: 5% 0% 30% 0%;
+}
+
+/* roommate green box description*/
+.description{
+    grid-column: 1/4;
+    grid-row: 4/7;
+    margin: 20% 15% 10%;
+    padding: 7% 6%;
+    background-color: #E7EABB;
+    border-radius: 5rem;
+}
+.bold{
+    font-weight: bold;
+}
+
+/* web roommateHUB*/
+.roommateweb{
+    grid-column: 1/2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.webhub{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin: 14%;
+}
+.titleweb{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: 23% 25% 1% 25%;
+}
+.titleleft{
+    font-size: 1.9rem;
+}
+.hubweb1{
+    max-width: 40rem;
+    margin: 22% 0% 10% 0%;
+    border-radius: 2rem;
+}
+.hubweb2{
+    max-width: 25rem;
+    margin: 0% 0% 30% 0%;
+}
+
+/*damhsa*/
+.damhsa{
+    grid-column: 1/2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.damhsabutton{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 14%;
+}
+.titledamhsa{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin: 23% 25% 1% 25%;
+}
+.titleright{
+    font-size: 1.9rem;
+}
+.logodamhsa{
+    max-width: 20rem;
+}
+
+/*Bollygge*/
+.bollygge{
+    grid-column: 1/2;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.bollybutton{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin: 14%;
+}
+.titlebolly{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: 23% 25% 1% 25%;
+}
+.bollylogo{
+    margin-top: 10%;
+}
+
+/*logo placement*/
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+    width: 295px;
+    padding: 1rem;
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+
+
+/*desktop responsive*/
+@media (min-width:992px){
+
+    /*web nav*/
+    .navlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 7% 7% 5%;
+    }
+    ul{
+        list-style-type: none;
+        font-size: 1.7rem;
+    }
+    li{
+        padding: 0rem 1rem;
+    }
+
+    /*main*/
+    p{
+        font-size: 1.4rem;
+    }
+    .titleright{
+        font-size: 1.7rem;
+        font-weight: lighter;
+    }
+    .titleleft{
+        font-size: 1.7rem;
+        font-weight: lighter;
+    }
+    .borderbox{
+        grid-column: 1/4;
+        grid-row: 1/5;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 0.9px solid #806C62;
+        border-radius: 4rem;
+        z-index: -1;
+        margin: 10% 10% 5% 10%;
+    }
+
+    /*buttons*/
+    .button{
+        border: none;
+        border-radius: 38px;
+        font-size: 2rem;
+        background-color: #E5D3E8;
+        padding: 1rem;
+    }
+    .buttontext{
+        font-size: 1.8rem;
+    }
+    .app{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        margin: 18% 20%;
+    }
+    .webhub{
+        grid-column: 3/4;
+        grid-row: 1/3;
+        margin: 18% 20%;
+    }
+    .damhsabutton{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        margin: 18% 20%;
+    }
+    .bollybutton{
+        grid-column: 3/4;
+        grid-row: 1/3;
+        margin: 18% 20%;
+    }
+
+    /*images*/
+    .borderbox{
+        grid-column: 1/4;
+        grid-row: 1/5;
+        border: 0.9px solid #806C62;
+        border-radius: 4rem;
+        z-index: -1;
+        margin: 10% 10% 5% 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .images{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 10% 5% 0% 5%;
+    }
+    .img{
+        max-width: 15rem;
+        margin: 15% 5% 0% 5% ;
+    }
+
+    .hubweb1{
+        max-width: 35rem;
+        border-radius: 2rem;
+        margin: 10% 5% 20% 5%;
+    }
+    .hubweb2{
+        max-width: 16rem;
+       margin-top: 18%;
+    }
+    .webimages{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 5% 5% 0% 5%;
+    }
+
+
+    /*logo placement*/
+    .logoposition{
+        max-width: 22rem;
+        margin: 10% 0% 20% 0%;
+    }
+    .logodamhsa{
+        max-width: 18rem;
+    }
+
+    /*green description boxes*/
+    .description{
+        grid-column: 1/4;
+        grid-row: 4/7;
+        margin: 10% 18% 10%;
+        padding: 7% 6%;
+        background-color: #E7EABB;
+        border-radius: 5rem;
+    }
+
+    /*web logo placement*/
+    .logo{
+        width: 200px;
+        padding: 0;
+        margin-top: 0%;
+        margin-bottom: 4%;
+    }
+}
