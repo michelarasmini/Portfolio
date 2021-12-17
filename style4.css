@@ -1,0 +1,265 @@
+/*imported fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Yeseva+One&display=swap');
+
+/*general settings*/
+*{
+	margin: 0px;
+	padding: 0px;
+    font-family: Montserrat;
+    color: #806C62;
+}
+body{
+    background-color: #FAF6F0;
+}
+p{
+    font-size: 1.8rem;
+}
+
+/*navigation*/
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7% 4% 8%;
+}
+ul{
+    list-style-type: none;
+    font-size: 2.7rem;
+    padding: 0% 3%;
+}
+a{
+    text-decoration: none;
+}
+.contactlink{
+    text-decoration: underline;
+}
+
+/*main*/
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+/*enquiries*/
+.enquiries{
+    grid-column: 1/2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.title{
+    border: none;
+    border-radius: 45px;
+    font-size: 2rem;
+    padding: 2.5rem;
+}
+.titletext{
+    font-size: 2rem;
+}
+.firstpurple{
+    background-color: #E5D3E8;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 10% 37% 50% 37%;
+}
+.buttontext{
+    font-size: 2.3rem;
+}
+
+.borderbox{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 0.9px solid #806C62;
+    border-radius: 5rem;
+    z-index: -1;
+    margin: 15% 17% 5% 17%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.description{
+    text-align: center;
+    margin: 15% 10%;
+}
+.write{
+    border: 0.2px solid #806C62;
+    background-color: #FAF6F0;
+    border-radius: 2rem;
+    padding: 2% 5%;
+    margin-bottom: 10%;
+}
+.writetext{
+    font-size: 2rem;
+}
+
+/*collaborate*/
+.collaborate{
+    grid-column: 1/2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.green{
+    background-color: #E7EABB;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 10% 37% 50% 37%;
+}
+
+/*hiring*/
+.hiring{
+    grid-column: 1/2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.secondpurple{
+    background-color: #E5D3E8;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 10% 37% 50% 37%;
+}
+
+/*logo placement*/
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+    width: 295px;
+    padding: 1rem;
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+
+
+/*desktop responsive*/
+@media (min-width:992px){
+    /*web nav*/
+    .navlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 7% 7% 5%;
+    }
+    ul{
+        list-style-type: none;
+        font-size: 1.7rem;
+    }
+    li{
+        padding: 0rem 1rem;
+    }
+
+    /*general settings*/
+    p{
+        font-size: 1.4rem;
+    }
+
+    /*main*/
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 3% 4% 10% 4%;
+    }
+
+    /*enquiries*/
+    .enquiries{
+        grid-column: 1/2;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .title{
+        border: none;
+        border-radius: 30px;
+        padding: 1rem;
+    }
+    .titletext{
+        font-size: 1.7rem;
+    }
+    .firstpurple{
+        background-color: #E5D3E8;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 10% 23% 80% 23%;
+        padding: 6%;
+    }
+    .borderbox{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border: 0.7px solid #806C62;
+        border-radius: 4rem;
+        z-index: -1;
+        margin: 18% 5% 2% 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .description{
+        text-align: center;
+        margin: 15% 10%;
+    }
+    .write{
+        border: 0.1px solid #806C62;
+        background-color: #FAF6F0;
+        border-radius: 2rem;
+        padding: 2% 5%;
+        margin-bottom: 10%;
+    }
+    .writetext{
+        font-size: 1.5rem;
+    }
+   
+    /*collaborate*/
+    .collaborate{
+        grid-column: 2/3;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .green{
+        background-color: #E7EABB;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 10% 23% 80% 23%;
+        padding: 6%;
+    }
+    
+
+    /*hiring*/
+    .hiring{
+        grid-column: 3/4;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .secondpurple{
+        background-color: #E5D3E8;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 10% 23% 80% 23%;
+        padding: 6%;
+    }
+
+    
+    
+    /*web logo placement*/
+    .logo{
+        width: 200px;
+        padding: 0;
+        margin-top: 0%;
+        margin-bottom: 4%;
+    }
+}
