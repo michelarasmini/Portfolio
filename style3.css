@@ -1,0 +1,304 @@
+/*imported fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Yeseva+One&display=swap');
+
+/*general settings*/
+*{
+	margin: 0px;
+	padding: 0px;
+    font-family: Montserrat;
+    color: #806C62;
+}
+body{
+    background-color: #FAF6F0;
+}
+p{
+    font-size: 1.8rem;
+}
+.intro{
+    font-family: Yeseva one;
+    color: #806C62;
+    font-size: 4.5rem;
+    font-weight: lighter;
+    padding-top: 55%;
+}
+.paragraph{
+    margin-top: 8%;
+}
+
+/*navigation*/
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7% 4% 8%;
+}
+ul{
+    list-style-type: none;
+    font-size: 2.7rem;
+    padding: 0% 3%;
+}
+a{
+    text-decoration: none;
+}
+.aboutlink{
+    text-decoration: underline;
+}
+
+/*border boxes*/
+.borderbox{
+    border: 0.9px solid #6E5E4F;
+    border-radius: 4.3rem;
+    z-index: -2;
+}
+.aboutbox{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    margin: 60% 10% 12% 10%;
+    padding: 10% 12%;
+}
+
+/*buttons*/
+.button{
+    border: none;
+    border-radius: 2.5rem;
+    padding: 2.9rem;
+}
+.purple{
+    background-color: #E5D3E8;
+    grid-column: 1/3;
+    grid-row: 1;
+    margin: 3% 33% 0% 33%;
+}
+.green{
+    background-color: #E7EABB;
+    grid-column: 1/3;
+    grid-row: 1;
+    margin: 4% 32%;
+   
+}
+.buttontext{
+    font-size: 2.3rem;
+}
+
+/*images*/
+.profile{
+    max-width: 41rem;
+    border-radius: 6rem;
+}
+.profilediv{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10%;
+}
+.book img{
+    max-width: 100% ;
+    border-radius: 3rem;
+}
+.book{
+    margin: 5%;
+}
+figure{
+    width: 23rem;
+}
+figcaption{
+    font-size: 1.7rem;
+    text-align: center;
+    align-content: center;
+}
+.booktitle{
+    margin-top: 10%;
+}
+.author{
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+
+/*main*/
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.about{
+    grid-column: 1/4;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.currentreads{
+    grid-column: 1/4;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+}
+.booklist{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 10% 10% 12% 10%;
+    padding: 15% 5% 10%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+/*logo placement*/
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+    width: 295px;
+    padding: 1rem;
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+
+
+/*desktop responsive*/
+@media (min-width:992px){
+    
+    /*web nav*/
+    .navlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 7% 7% 5%;
+    }
+    ul{
+        list-style-type: none;
+        font-size: 1.7rem;
+    }
+    li{
+        padding: 0rem 1rem;
+    }
+
+    /*general settings*/
+    p{
+        font-size: 1.4rem;
+    }
+    .intro{
+        font-size: 3rem;
+        padding-top: 10%;
+    }
+    .paragraph{
+        margin-top: 8%;
+    }
+
+    /*buttons*/
+    .button{
+        border: none;
+        border-radius: 38px;
+        padding: 1rem;
+    }
+    .buttontext{
+        font-size: 1.6rem;
+    }
+    .purple{
+        grid-column: 3/4;
+        grid-row: 1/1;
+        margin: 25% 40% 250% 20%;
+    }
+    .green{
+        background-color: #E7EABB;
+        grid-column: 2/3;
+        grid-row: 1;
+        margin: 25% 15% 0% 15%;
+       
+    }
+
+    /*images*/
+    .profile{
+        max-width: 29rem;
+        border-radius: 3rem;
+    }
+    .profilediv{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        z-index: 1;
+        margin: 5% 0% 0% 15%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .book img{
+        max-width: 100% ;
+        border-radius: 2rem;
+    }
+    .book{
+        margin: 5%;
+    }
+    figure{
+        width: 17rem;
+    }
+    figcaption{
+        font-size: 1.4rem;
+        text-align: center;
+        align-content: center;
+    }
+    .booktitle{
+        margin-top: 10%;
+    }
+    .author{
+        font-size: 1.2rem;
+        margin-top: 2%;
+    }
+
+    /*main*/
+    .about{
+        grid-column: 1/2;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 10% 10% 5% 10%;
+    }
+    .currentreads{
+        grid-column: 1/2;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+    .booklist{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        margin: 10% 9% 10% 9%;
+        padding: 5% 3%;
+        grid-column: 1/4;
+        z-index: -1;
+    }
+
+    /*border boxes*/
+    .borderbox{
+        border: 0.9px solid #806C62;
+        border-radius: 4.3rem;
+        z-index: -1;
+    }
+    .aboutbox{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin: 10% 9% 10% 30% ;
+        padding: 5% 8% 3% 15%;
+    }
+
+    /*web logo placement*/
+    .logo{
+        width: 200px;
+        padding: 0;
+        margin-top: 0%;
+        margin-bottom: 4%;
+    }
+}
