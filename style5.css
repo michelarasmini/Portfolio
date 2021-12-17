@@ -1,0 +1,180 @@
+/*imported fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Yeseva+One&display=swap');
+
+/*general settings*/
+*{
+	margin: 0px;
+	padding: 0px;
+    font-family: Montserrat;
+    color: #806C62;
+}
+body{
+    background-color: #FAF6F0;
+}
+p{
+    font-size: 1.8rem;
+}
+h1{
+    font-family: Yeseva one;
+    font-size: 2.5rem;
+    margin: 5% 5% 5% 5%;
+}
+
+/*navigation*/
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7% 4% 8%;
+}
+ul{
+    list-style-type: none;
+    font-size: 2.7rem;
+    padding: 0% 3%;
+}
+a{
+    text-decoration: none;
+}
+.socialslink{
+    text-decoration: underline;
+}
+
+/*main*/
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.socialmedia{
+    grid-column: 1/2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.button{
+    border: none;
+    border-radius: 45px;
+    font-size: 2rem;
+    padding: 2.5rem;
+    background-color: #E7EABB;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 10% 33% 50% 33%;
+}
+.buttontext{
+    font-size: 2rem;
+}
+
+.borderbox{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 0.9px solid #806C62;
+    border-radius: 5rem;
+    z-index: -1;
+    margin: 15% 17% 5% 17%;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+}
+.description{
+    text-align: center;
+}
+.first{
+    margin: 23% 17% 2%;
+}
+.second{
+    margin: 2% 17% 5%;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16%;
+}
+
+/*logo placement*/
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+    width: 295px;
+    padding: 1rem;
+    margin-top: 30%;
+    margin-bottom: 4%;
+}
+
+/*desktop responsive*/
+@media (min-width:992px){
+    /*web nav*/
+    .navlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 7% 7% 5%;
+    }
+    ul{
+        list-style-type: none;
+        font-size: 1.7rem;
+    }
+    li{
+        padding: 0rem 1rem;
+    }
+
+    /*general settings*/
+    p{
+        font-size: 1.4rem;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 5% 5% 5% 5%;
+    }
+
+    /*main*/
+
+    .button{
+        border: none;
+        border-radius: 45px;
+        font-size: 2rem;
+        padding: 2.5rem;
+        background-color: #E7EABB;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 4% 33% 50% 33%;
+    }
+    .buttontext{
+        font-size: 1.7rem;
+    }
+
+    .borderbox{
+        margin: 8% 17% 5% 17%;
+        display: flex;
+    }
+    .first{
+        margin: 0% 13% 1%;
+    }
+    .second{
+        margin: 1% 17% 5%;
+    }
+    .links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 0%;
+        padding: 0% 15%;
+    }
+
+
+    /*web logo placement*/
+    .logo{
+        width: 200px;
+        padding: 0;
+        margin-top: 0%;
+        margin-bottom: 4%;
+    }
+}
